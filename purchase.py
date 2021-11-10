@@ -13,11 +13,11 @@ overview of this function:
 def purchase(List):
     L = List  # assign list with variable name 'L'.
     a_name = input("Please enter your name: ")
-    print("\nHello " + a_name + "! Welcome to our Electronic Store.\nLook at above and select product as your choice.")
+    print("\nHello " + a_name + "! Welcome to Best Tees.\nLook at above and select product as your choice.")
     q = {}  # assign empty dictionary with variable name 'q'.
     flag = "Y"
     while flag.upper() == "Y":  # check and go if flag is 'Y' or 'y'.
-        product = input("\nWhat product do you want to buy? ")
+        product = input("\nWhich products would you like to buy? ")
         product_name = product.upper()  # change the string value in the upper case.
 
         if product_name == L[0][0].upper() \
@@ -52,7 +52,7 @@ def purchase(List):
                       L[i][2])  # print, last updated product name, quantity and price.
             print("--------------------------------------------")
 
-    print("\nYou Choosed Items and it's Quantity respectively:\n", q, "\n")
+    print("\nYou Chose Items and it's Quantity respectively:\n", q, "\n")
     '''
         In the following operation:
         1) change every string value in the upper case latter.
@@ -154,15 +154,96 @@ def purchase(List):
     file.write("\n-------------------------------------------------------------")
 
     for keys in q.keys():  # In this loop, write in a file only those product which is purchase by user.
-        if keys == "PHONE":
+        if keys == "T-shirt(S-XL)":
             file.write(
-                str("\n" + str(keys) + " \t\t " + str(q['PHONE']) + " \t\t " + str(L[0][1]) + " \t\t " + str(p_amount)))
-        elif keys == "LAPTOP":
+                str("\n" + str(keys) + " \t\t " + str(q['T-shirt(S-XL)']) + " \t\t " + str(L[0][1]) + " \t\t " + str(p_amount)))
+        elif keys == "T-shirt(2XL)":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['LAPTOP']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+                "\n" + str(keys) + " \t\t " + str(q['T-shirt(2XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "T-shirt(3XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['T-shirt(3XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "T-shirt(4XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['T-shirt(4XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Long-sleeve shirt(S-XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Long-sleeve shirt(S-XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Long-sleeve shirt(2XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Long-sleeve shirt(2XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Long-sleeve shirt(3XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Long-sleeve shirt(3XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Long-sleeve shirt(4XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Long-sleeve shirt(4XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Winbreaker(S-XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Winbreaker(S-XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Windbreaker(2XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Windbreaker(2XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Windbreaker(3XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Windbreaker(3XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Windbreaker(4XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Windbreaker(4XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hooded Zipper(S-XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hooded Zipper(S-XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hooded Zipper(2XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hooded Zipper(2XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hooded Zipper(3XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hooded Zipper(3XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hooded Zipper(4XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hooded Zipper(4XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hoodies(S-XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hoodies(S-XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hoodies(2XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hoodies(2XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hoodies(3XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hoodies(3XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hoodies(4XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hoodies(4XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Hats/Caps":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Hats/Caps']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Tote bag":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Tote bag']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Jersey(S-XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Jersey(S-XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Jersey(2XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Jersey(2XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Jersey(3XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Jersey(3XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "(Jersey(4XL)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Jersey(4XL)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Name on back":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Name on back']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Number on back(6-in)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Number on back(6-in)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "Number on back(8-in)":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['Number on back(8-in)']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
         else:
             file.write(
-                str("\n" + str(keys) + " \t\t " + str(q['HDD']) + " \t\t " + str(L[2][1]) + " \t\t " + str(h_amount)))
+                str("\n" + str(keys) + " \t\t " + str(q['Hand towel']) + " \t\t " + str(L[2][1]) + " \t\t " + str(h_amount)))
 
     file.write("\n\n-------------------------------------------------------------")
     file.write("\n\t\t\tYour discountable amount: " + str(f_amount))
